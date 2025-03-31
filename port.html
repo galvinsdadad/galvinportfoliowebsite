@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <title>Galvin J</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar-nav .nav-item {
+            padding: 0 1rem;
+      
+        }
+        .profile {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .hero {
+            padding: 100px 0;
+        }
+        .hero .container {
+            position: relative;
+            top: 50px;
+        }
+        @media (max-width: 768px) {
+            .hero .container {
+                text-align: center;
+            }
+            .profile {
+                margin-top: 20px;
+            }
+            .hero{
+                position: relative;
+                bottom:100px;
+            }
+            p{
+                
+            }
+        }
+        .profile-about{
+            width:200px;
+            height:auto;
+            border-radius: 100%;}
+        
+            .profile-home{
+            width:300px;
+            height:auto;
+            border-radius: 100%;}
+        .html{
+            width:80px;
+            height:auto;
+            border-radius: 100%;
+        }
+        .inp-1, .inp {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+        .inp-1:focus, .inp:focus {
+            border-color: #17a2b8; /* Bootstrap primary color */
+        }
+        .btn-gradient {
+            background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            color: #fff;
+        }
+
+        i{
+          background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;  /* For Safari */
+    background-clip: text;
+    color: transparent;
+        }
+        html {
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.education h3{
+font-size: 25px;
+}
+body{
+         /* Dark background */
+}
+
+
+:root {
+  --gradient-shadow: radial-gradient(circle, 
+    #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, 
+    #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+}
+
+
+
+.image-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.image-container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-shadow);
+  background-size: 400%;
+  border-radius: 50%;
+  z-index: -1;
+  animation: animate 6s linear infinite;
+  filter: blur(20px);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+body{
+    background-color:#1A1A1D /* Dark background */
+}
+nav{
+    background-color:#1A1A1D /* Dark background */
+}
+
+
+
+
+/* Hover Effect */
+
+.name,.name-r{
+    background: linear-gradient(45deg, #FFCC70, #C850C0, #4158D0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important; /* Ensures text remains transparent */ 
+}
+
+.navbar-nav .nav-link:hover {
+    background: linear-gradient(45deg, #FFCC70, #C850C0, #4158D0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important; /* Ensures text remains transparent */
+}
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact .col-md-6 {
+        width: 100%;
+    }
+
+    .contact .h2 {
+        font-size: 24px!important;
+    }
+    .navbar-nav .nav-link:hover {
+        background: linear-gradient( #FFCC70, #C850C0, #4158D0);
+        -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important; /* Ensures text remains transparent */}
+}
+    
+    
+
+    .contact .inp-1, 
+    .contact .inp {
+        width: 70%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .contact button {
+        width: 30%;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 15px;
+    }
+
+    .contact .h2 {
+        font-size: 20px;
+    }
+
+    .contact .inp-1, 
+    .contact .inp {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact button {
+        font-size: 16px;
+        padding: 10px;
+    }
+ 
+
+  
+}
+.button-gradient:hover{
+    background: linear-gradient(45deg, #FFCC70, #C850C0, #4158D0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important; /* Ensures text remains transparent */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+.skill-img{
+    width:100px;
+    height:auto;
+}
+
+
+    hr {
+    border: 2px solid rgba(255, 255, 255, 0.5); /* White with transparency */
+    width: 100%; /* Adjust width as needed */
+    margin: 10px auto; /* Center it */
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2); /* Optional shadow */
+
+
+
+
+}
+
+.navbar-toggler-icon {
+    background-image: linear-gradient(45deg, #FFCC70, #C850C0, #4158D0);
+    -webkit-mask-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light text-light  shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#"><h1 class="name h1 text-light mt-2">Galvin J</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item"><a class="nav-link active text-light" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#My Skills">My Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#Project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#Education ">Education & Experience</a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link text-light" href="#Contact">Contact</a></li>
+                </ul>
+                <a class=" d-none d-lg-block btn btn-outline-light " href="#Contact">Let's Talk</a>
+            </div>
+        </div>
+    </nav><hr>
+    <div class="view">
+    <section class="Home" id="Home">
+        <div class="container">
+            <div class="row align-items-center p-5 text-light">
+                <!-- Left Content -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="name display-3 fw-bold">Galvin J</h1>
+                    <h4 class="text-light"> <span class="name">Frontend Developer & UI/UX Designer</span></h4>
+                    <p class="text-light ">
+                    <p class="perfect-text">    I am a passionate Frontend Developer & UI/UX Designer focused on crafting visually appealing, user-friendly digital experiences. Skilled in HTML, CSS, JavaScript, and modern frameworks, I build responsive and interactive websites to enhance </p>
+                    <button class="btn btn-outline-light">
+                        Download CV  <i class="bi  bi-download text-dark"></i>
+                    </button>
+                    
+                  
+                </div>
+    
+                <!-- Right Image -->
+                <div class="col-lg-6 d-flex justify-content-center mt-4 mt-lg-0">
+                    <div class="image-container">
+                        <img src="https://i.pinimg.com/736x/89/b7/69/89b769cf256a81bcb7df2ab4fa3ddfc9.jpg" 
+                             class="profile-home img-fluid" 
+                             alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+        <section class="about p-5" id="About">
+
+    <div class="container ">
+        <div class="">
+        <h1 class=" about-section d-flex justify-content-center align-items-center mt-5 text-light "> <span class="name">About Me</span></h1>
+    <div class=" block text-center"><img src="https://i.pinimg.com/736x/89/b7/69/89b769cf256a81bcb7df2ab4fa3ddfc9.jpg" alt="" class="profile-about"></div>
+          
+    <p class=" block text-light mt-3 text-center text-md-start px-3 px-md-5">
+        I’m Galvin, a passionate frontend developer and UI/UX enthusiast, currently pursuing BSc Computer Science at MCC College. I specialize in HTML, CSS, JavaScript, and Bootstrap, with hands-on experience in building responsive websites and UI designs. I have designed projects like a Netflix clone, a portfolio website, an e-commerce site, and a mobile app UI. I am continuously learning and aiming to become a full-stack developer by expanding my skills in frontend and backend technologies.
+    </p>
+    
+    </div></div></div>
+  </section>
+       
+  <section class="skills" id="My Skills">
+    <div class="container">
+        <h2 class="name text-center text-light mx-5 my-3"><span class="name">My Skills</span></h2>
+        <div class="row g-4"> 
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card skill-card h-100 text-center p-3 bg-dark text-light border-light rounded-3">
+                    <img src="https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc" 
+                         class="skill-img img-fluid mx-auto d-block" alt="HTML">
+                    <p class="mt-4">I have a strong understanding of HTML, including semantic markup, accessibility, and structuring web pages efficiently. I can create well-optimized and responsive layouts using proper tags and attributes.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card skill-card h-100 text-center p-3 bg-dark text-light border-light rounded-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9jttJl3YK3ienYv6UfvG2i34Lpadn6nOPkA&s" 
+                         class="skill-img img-fluid mx-auto d-block" alt="CSS">
+                    <p class="mt-4">I have a solid grasp of CSS, including Flexbox and Grid, to create visually appealing and responsive designs. I can style web pages with animations, transitions, and media queries for a seamless user experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card skill-card h-100 text-center p-3 bg-dark text-light border-light rounded-3">
+                    <img src="https://i.pinimg.com/736x/96/e6/8d/96e68d712f51757ac07cfe22354d8be8.jpg" 
+                         class="skill-img img-fluid mx-auto d-block" alt="JavaScript">
+                    <p class="mt-4">I am proficient in JavaScript fundamentals and can handle DOM manipulation, event handling, and basic interactivity. I am improving my knowledge of ES6+ features and JavaScript-based frameworks.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 mt-4"> 
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card skill-card h-100 text-center p-3 bg-dark text-light border-light rounded-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXvzJib8clmr-0OhQgf-bd4CAyj_NUdWj3A&s" 
+                         class="skill-img img-fluid mx-auto d-block" alt="Bootstrap">
+                    <p class="mt-4">I have experience using Bootstrap to create responsive and mobile-first designs efficiently. I can work with Bootstrap’s grid system, components, and utilities to develop fast and consistent UI designs.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card skill-card h-100 text-center p-3 bg-dark text-light border-light rounded-3">
+                    <img src="https://i.pinimg.com/236x/18/f1/72/18f1727873924ba58fde1f739d11b77b.jpg" 
+                         class="skill-img img-fluid mx-auto d-block" alt="Figma">
+                    <p class="mt-4">I use Figma to design UI/UX wireframes, prototypes, and interactive designs. I can work with layers, components, auto-layout, and design systems effectively.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card skill-card h-100 text-center p-3 bg-dark text-light border-light rounded-3">
+                    <img src="https://i.pinimg.com/236x/ee/ae/3c/eeae3c3d518ea0a1500b0f5f44860863.jpg" 
+                         class="skill-img img-fluid d-block mx-auto" alt="Canva">
+                    <p class="mt-4">I leverage Canva for quick graphic design, social media content, and presentation visuals. I can create visually appealing designs with templates, typography, and brand consistency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="project p-5" id="Project">
+        <div class="container">
+            <h1 class=" name text-center text-light mx-5 my-3"><span class="name">My Projects</span></h1>
+            <div class="row gx-4 gy-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/busicol-free-template-353x278.jpg" class="card-img-top" alt="projects">
+                        <div class="card-body text-center  bg-dark text-light">
+                            <h5 class="card-title">Portfolio Website Templates</h5>
+                            <h6 class="p">HTML, CSS, JS ,Boostraps | Design</h6>
+                           
+                            <a href="https://olive-odelinda-77.tiiny.site" class="btn btn-gradient">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsTkrbQLQBMp2OKZZA9PV_pycNE_DLsWYHuGm00O7NB_3UQuqdbmBCBv4&s" class="card-img-top" alt="projects">
+                        <div class="card-body text-center  bg-dark text-light">
+                            <h5 class="card-title  ">Netflix e-clone Movie Website</h5>
+                            <h6 class="p">HTML, CSS, JS | Design</h6>
+                            <a href="https://galvinmariaalversa.github.io/dfdgdfgsdhfnjfddg/" class="btn btn-gradient">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsTkrbQLQBMp2OKZZA9PV_pycNE_DLsWYHuGm00O7NB_3UQuqdbmBCBv4&s" class="card-img-top" alt="projects">
+                        <div class="card-body text-center  bg-dark text-light">
+                            <h5 class="card-title  ">Netflix e-clone Movie Website</h5>
+                            <h6 class="p">Figma| Design</h6>
+                            <a href="https://www.figma.com/proto/fj0kuv1RgCVI0BCz3y1JaU/Untitled?node-id=1-2658&p=f&t=Rg1Qpq7mYtdaLA1b-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="btn btn-gradient">View Project</a>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+    <section class="education" id="Education">
+        <div class="container">
+            <h2 class="text-center name text-light mx-5 my-3"><span class="name">Education</span></h2>
+            <div class="row g-4"> 
+    
+                <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card h-100 text-center p-3 bg-dark border-light text-light rounded-3">
+                        <h3 class="mt-2 mb-3 "><span class="name">Education</span></h3>
+                        <ul class="text-start">
+                            <li><strong>BSc Computer Science</strong>, Madras Christian College (2023 – Present).</li>
+                            <li>Strong foundation in software engineering, web development, and databases.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card h-100 text-center p-3 bg-dark border-light text-light rounded-3">
+                        <h3 class="mt-2 mb-3 "><span class="name">Technical Skills</span></h3>
+                        <ul class="text-start ">
+                            <li class="">Proficient in HTML, CSS, JavaScript, Bootstrap, and Figma.</li>
+                            <li class="">Learning Python for backend and experienced with Git & GitHub.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card h-100 text-center p-3 bg-dark border-light text-light rounded-3">
+                        <h3 class="mt-3 mb-3 "><span class="name">Practical Experience</span></h3>
+                        <ul class="text-start">
+                            <li>Built responsive websites with UI/UX optimization using modern tools.</li>
+                            <li>Enhanced problem-solving and adaptability through hands-on projects.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card h-100 text-center p-3 bg-dark border-light text-light rounded-3">
+                        <h3 class="mt-3 mb-3 "><span class="name">Projects</span></h3>
+                        <ul class="text-start">
+                            <li>Developed Netflix Clone, E-commerce Prototype, and Portfolio Website.</li>
+                            <li>Focused on user experience, responsiveness, and interactive elements.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card h-100 text-center p-3 bg-dark border-light text-light rounded-3">
+                        <h3 class="mt-3 mb-3 "><span class="name">Certifications & Achievements</span></h3>
+                        <ul class="text-start">
+                            <li>Certified in Frontend Development (Great Learning) and UI/UX Design Basics.</li>
+                            <li>8.2 GPA with strong programming and web development skills.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card h-100 text-center p-3 bg-dark border-light text-light rounded-3 ">
+                        <h3 class="mt-3 mb-3 "><span class="name">Career Goal</span></h3>
+                        <ul class="text-start">
+                            <li>Aspiring full-stack developer, currently focusing on frontend.</li>
+                            <li>Passionate about building user-friendly digital experiences.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+             
+    <section class="contact" id="Contact">
+        <div class="col-md-6 col-lg-4 mx-auto">
+            <h1 class=" text h2 text-light "><span class="name">Contact Me</span></h1>
+            <p class="text-light">
+              
+            </p>
+            <form>
+                <input type="text" placeholder="Enter Your Name" class="inp-1 mb-2" required>
+                <input type="email" placeholder="Enter Your Email" class="inp-1 mb-2" required>
+                <textarea placeholder="Enter Your Message" class="inp mb-2" rows="4" required></textarea>
+                <button type="submit" class="btn-send btn-gradient text-light ">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+    </section>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      
+    </script>
+    
+
+
+</body>
+</html>     
